@@ -1,8 +1,11 @@
-{-
-  © 2019-2020 by Jürgen Pfeifer (juergen@familiepfeifer.de)
-  
-  The ModularFibonacci module implements some functions to compute some properties of 
-  the Fibonacci number series calculated with modular arithmetic.
+{-|
+Module      : ModularFibonacci
+Description : Implements some functions for Fibonacci number series with modular arithmetic.
+Copyright   : © Jürgen Pfeifer, 2019-2020
+License     : BSD3
+Maintainer  : juergen@familiepfeifer.de
+Stability   : experimental
+Portability : POSIX
 -}
 module ModularFibonacci
     ( primes,
@@ -34,7 +37,7 @@ fibonacci = fibs
 
 {-| 
   The fibonacciModP function calculates the infinite list of fibonacci numbers modulo a Prime p.
-  It takes one argument, which is the (Prime) number p.
+  * One argument, which is the (Prime) number p representing the modulus.
 -}
 fibonacciModP :: Integer -> [Integer]
 fibonacciModP p = fibsp
@@ -44,7 +47,7 @@ fibonacciModP p = fibsp
 
 {-| 
     The fibonacciModP' function just returns the finite list with the first period of the Fibonacci series modulo a Prime number p.
-    It takes one argument, which is the (Prime) number p.
+  * One argument, which is the (Prime) number p representing the modulus.
 -}
 fibonacciModP' :: Integer -> [Integer]
 fibonacciModP' p = take (period!!0) fibs
@@ -54,7 +57,7 @@ fibonacciModP' p = take (period!!0) fibs
 
 {-| 
   The fibonacciPeriod function calculates the length of a period of fibonacci numbers modulo a prime.
-  It takes one argument, which is the (Prime) number p.
+  * One argument, which is the (Prime) number p representing the modulus.
 -}
 fibonacciPeriod :: Integer -> Integer
 fibonacciPeriod p = toInteger (length (fibonacciModP' p))
@@ -62,8 +65,14 @@ fibonacciPeriod p = toInteger (length (fibonacciModP' p))
 {-|              
   An infinite list of some characteristics for Fibonacci series calculated with modular arithmetic with a prime modulus. 
   The characteristics are 4-tuples containing 
-     [ the prime itself, the fibonacciPeriod, the fibonacciModulus, the fibonacciWeight ].
-  The terms fibonacciModulus and fibonacciWeight are defined in the function.
+  * the prime itself
+  * the fibonacciPeriod
+  * the fibonacciModulus
+  * the fibonacciWeight
+
+  The fibonacciModulus is the maximum of the GCD of the fibonacciPeriod and (p±1).
+
+  The fibonacciWeight is the fibonacciPeriod divided by the fibonacciModulus.
 -}
 fibonacciInfo :: [(Integer,Integer,Integer,Integer)]
 fibonacciInfo = [ (p,fPeriod,fibonacciModulus,fibonacciWeight) | p <- primes, 
