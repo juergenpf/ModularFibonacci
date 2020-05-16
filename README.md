@@ -59,7 +59,8 @@ I decided to go with [Visual Studio Code](https://code.visualstudio.com/) (no su
 
 The Haskell Language Server is a merger of the previos separate projects [Haskell IDE Engine](https://github.com/haskell/haskell-ide-engine) and [ghcide](https://github.com/digital-asset/ghcide). The server provides all the binaries required by the Visual Studio Code extension.
 
-The result is a basic tooling that allows very nice syntax highlighting, code completion, code navigation etc.
+The result is a basic tooling that allows very nice syntax highlighting, code completion, code navigation, support for displaying Documentation annotations etc.
+
 ![Screenshot](assets/Screenshot01.png)
 
 It's worth mentioning that ghcide is a brilliant starter for the basic code navigation. But I would like to see features from the [Haskelly](https://marketplace.visualstudio.com/items?itemName=UCL.haskelly) extionsion beeing provided too in the future, especially the ones that automatically discover which buttons may be usefull in the current context and displays these buttons in the status bar. This then provides the very basic feeling of a visual development environment: Edit code and the simply click a button to build, test or run! 
