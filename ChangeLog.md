@@ -1,3 +1,3 @@
-# Changelog for ModularFibonaci
+# Changelog for ModularFibonacci
 
 ## Unreleased changes

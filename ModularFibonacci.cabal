@@ -4,13 +4,13 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: baec649dba40231cc1164cbe8a0c4c9d015011fa5cf293ddd2e2678666eb0ecf
+-- hash: 1092fb827e1d9b0402398822c9c61a5d6038411fa3d4b2312ff97b0f9240bb7e
 
-name:           ModularFibonaci
+name:           ModularFibonacci
 version:        1.0.0.0
-description:    Please see the README on GitHub at <https://github.com/githubuser/ModularFibonaci#readme>
-homepage:       https://github.com/juergenpf/ModularFibonaci#readme
-bug-reports:    https://github.com/juergenpf/ModularFibonaci/issues
+description:    Please see the README on GitHub at <https://github.com/githubuser/ModularFibonacci#readme>
+homepage:       https://github.com/juergenpf/ModularFibonacci#readme
+bug-reports:    https://github.com/juergenpf/ModularFibonacci/issues
 author:         Jürgen Pfeifer
 maintainer:     juergen@familiepfeifer.de
 copyright:      2020 Jürgen Pfeifer
@@ -23,40 +23,40 @@ extra-source-files:
 
 source-repository head
   type: git
-  location: https://github.com/juergenpf/ModularFibonaci
+  location: https://github.com/juergenpf/ModularFibonacci
 
 library
   exposed-modules:
       ModularFibonacci
   other-modules:
-      Paths_ModularFibonaci
+      Paths_ModularFibonacci
   hs-source-dirs:
       src
   build-depends:
       base >=4.7 && <5
   default-language: Haskell2010
 
-executable ModularFibonaci-exe
+executable ModularFibonacci-exe
   main-is: Main.hs
   other-modules:
-      Paths_ModularFibonaci
+      Paths_ModularFibonacci
   hs-source-dirs:
       app
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      ModularFibonaci
+      ModularFibonacci
     , base >=4.7 && <5
   default-language: Haskell2010
 
-test-suite ModularFibonaci-test
+test-suite ModularFibonacci-test
   type: exitcode-stdio-1.0
   main-is: Spec.hs
   other-modules:
-      Paths_ModularFibonaci
+      Paths_ModularFibonacci
   hs-source-dirs:
       test
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      ModularFibonaci
+      ModularFibonacci
     , base >=4.7 && <5
   default-language: Haskell2010
