@@ -45,15 +45,19 @@ As good as Haskell as a language is, as immature is its community and the suppor
 It looks like some Haskell professionals took the challenge and are working to improve the situation. In recent years we saw the rise of very generic graphical editor environments like Visual Studio Code, Atom, Sublime etc - and there are tons of extensions for various of the most popular and even rare languages. This makes them an interesting target to build some Haskell tooling.
 
 ### The Operating System
+
 I'm as much a Linux as a Windows guy, so no religious dispute here. They both have their merits and both are excellent Operating Systems. But when it comes to Haskell, you're much better off by using Linux as your environment. Yes, Haskell is available on Windows, but if you try to build complex packages you ofteh run into challenges that require manual tweaks, as the primary environment of the authors was most certainly Linux.
 So I decided to make use of the best of both worlds, which means
+
 1. Windows 10 Pro with [WSL2](https://docs.microsoft.com/en-us/windows/wsl/wsl2-index). The __W__indows __S__ubsystem for __L__inux Version 2 relies on the 2004 Update of Windows 10, providing a Linux Kernel in addition to the Windows Kernel. This allows to run Linux distributions on a Windows system without a need to setup virtual machines. As long as the 2004 Update is not released, one has to use the Windows 10 Insider Build (Slow Ring) to get that functionality.
 1. [Ubuntu-20.04 LTS for WSL](https://www.microsoft.com/en-us/p/ubuntu-2004-lts/9n6svws3rx71?activetab=pivot:overviewtab). This is a user space Ubuntu-20.04 distribution that runs with the Linux Kernel provided by Windows 10 Update 2004. In this distribution I then install the regular Haskell tooling provided by the distribution.
 
 ### The Editor
+
 I decided to go with [Visual Studio Code](https://code.visualstudio.com/) (no surprise as I'm a retired Microsoftie:-)). Please note, that you should not install this editor in the WSL Linux you use, but on the Windows host. The reason is, that for WSL the ditor provides a special remote extension, that allows to run the editor as Windows app but doing the build in the WSL subsystem (see [here](https://code.visualstudio.com/docs/remote/wsl))
 
 ### The Haskell Tooling
+
 1. I'm using the [Haskell Language Server]( https://github.com/haskell/haskell-language-server). I did build that on a linux machine following the build instructions and copied the produced binaries into the /usr/bin directory of my WSL instance.
 2. In Visual Studio Code I use the [ghcide](https://marketplace.visualstudio.com/items?itemName=DigitalAssetHoldingsLLC.ghcide) extension
 
@@ -63,7 +67,4 @@ The result is a basic tooling that allows very nice syntax highlighting, code co
 
 ![Screenshot](assets/Screenshot01.png)
 
-It's worth mentioning that ghcide is a brilliant starter for the basic code navigation. But I would like to see features from the [Haskelly](https://marketplace.visualstudio.com/items?itemName=UCL.haskelly) extionsion beeing provided too in the future, especially the ones that automatically discover which buttons may be usefull in the current context and displays these buttons in the status bar. This then provides the very basic feeling of a visual development environment: Edit code and the simply click a button to build, test or run! 
-
-
-
+It's worth mentioning that ghcide is a brilliant starter for the basic code navigation. But I would like to see features from the [Haskelly](https://marketplace.visualstudio.com/items?itemName=UCL.haskelly) extionsion beeing provided too in the future, especially the ones that automatically discover which buttons may be usefull in the current context and displays these buttons in the status bar. This then provides the very basic feeling of a visual development environment: Edit code and the simply click a button to build, test or run!
