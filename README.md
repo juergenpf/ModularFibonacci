@@ -2,7 +2,7 @@
 
 ## The Challenge
 
-A while ago I was experimenting with Haskell, and one of my experiments was the Haskell program listed at the bottom of this post.
+A while ago I was experimenting with Haskell, and one of my experiments was the Haskell program that forms this project. Actually I posted it first [here](https://juergenpf.wordpress.com/2019/06/15/fun-with-haskell-and-fibonacci-numbers/) on my Wordpress Blog as a single Haskell file, while this is now a bit more modular to reflect a typical - yet simple - structure of a Haskell project with Visual Studio Code.
 
 The first thing you notice when you calculate the Fibonacci series in modulo arithmetic (with a prime modulus) is, that the generated series is periodic. For example, 
 
