@@ -17,5 +17,5 @@ main = print (experiment)
 -- fibonacciWeight values of 1 or 2 in the experiment).
 --
 -- Actually, there is mathimatical proof for these observations.
--- See: http://www.ijon.de/mathe/fibonacci/node3.html (in German)
---
+-- See file assets/Fibonacci-Zahlen.pdf (in German) in this project.
+-- This proof was provided by Michael Becker (http://www.ijon.de/)
