@@ -7,8 +7,9 @@ Maintainer  : juergen@familiepfeifer.de
 Stability   : experimental
 Portability : POSIX
 
-  This implementation uses the Integer type to do all the calculations, so althogu in
-  theory it can use arbitrary large numbers, computation will be slow.
+  This implementation uses the Integer type to do all the calculations, so although in
+  theory it can use arbitrary large numbers, computation will be a bit slower than
+  would be possible by using the intrinsic machine type Int.
   As our experiement will only take the first few hundreds of primes to get the point,
   this doesn't really matter. But mathematically it is more correct this way. 
 -}
