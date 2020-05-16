@@ -6,6 +6,11 @@ License     : BSD3
 Maintainer  : juergen@familiepfeifer.de
 Stability   : experimental
 Portability : POSIX
+
+  This implementation uses the Integer type to do all the calculations, so althogu in
+  theory it can use arbitrary large numbers, computation will be slow.
+  As our experiement will only take the first few hundreds of primes to get the point,
+  this doesn't really matter. But mathematically it is more correct this way. 
 -}
 module ModularFibonacci
     ( primes,
