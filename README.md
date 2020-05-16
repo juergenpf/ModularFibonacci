@@ -6,25 +6,25 @@ A while ago I was experimenting with Haskell, and one of my experiments was the 
 
 The first thing you notice when you calculate the Fibonacci series in modulo arithmetic (with a prime modulus) is, that the generated series is periodic. For example, 
 
-__the Fibonacci series modulo 3 is [0,1,1,2,0,2,2,1,0,1,1,2,0,2,2,1,0,1,..]__,  
+> __the Fibonacci series modulo 3 is [0,1,1,2,0,2,2,1,0,1,1,2,0,2,2,1,0,1,..]__,  
 
 which means it is a repetition of the finite list __[0,1,1,2,0,2,2,1]__.  
 
 I define the __FibonacciPeriod__ of a prime p as the length of this finite list generating the Fibonacci series modulo p. So for p=3 we have
 
-__FibonacciPeriod 3 = 8__
+> __FibonacciPeriod 3 = 8__
 
 What you also can see in the experiment is, that the FibonacciPeriod of p has usually a large GCD with one of p-1 or p+1. I call this GCD the __FibonacciModulus__ of a prime p. For example, we have
 
-__FibonacciModulus 3 = 4__
+> __FibonacciModulus 3 = 4__
 
 Apparently, the FibonacciModulus being a divisor of the FibonacciPeriod, we can define for a prime p 
 
-__FibonacciWeight__ p = FibonacciPeriod(p) / FibonacciModulus(p).
+> __FibonacciWeight__ p = FibonacciPeriod(p) / FibonacciModulus(p).
 
 Which for example gives
 
-__FibonacciWeight 3 = 2__
+> __FibonacciWeight 3 = 2__
 
 A surprising role in the experiments takes the prime 5. For 5 you get an unusual long period of Fibonacci numbers, actually all other primes in the experiment have periods smaller than the prime, or approx. the size of the prime or twice the size of the prime, which results in all primes except 5 have a FibonacciWeight of 1 or 2, only 5 has the FibonacciWeight 5. 
 
