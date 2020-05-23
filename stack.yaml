@@ -17,7 +17,9 @@
 #
 # resolver: ./custom-snapshot.yaml
 # resolver: https://example.com/snapshots/2018-01-01.yaml
-resolver: lts-15.12
+# On Ubuntu-20.04 the current ghc is 8.6.5, so we use the latest resolver for
+# this version
+resolver: lts-14.27
 
 # User packages to be built.
 # Various formats can be used as shown in the example below.
