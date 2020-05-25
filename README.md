@@ -68,3 +68,5 @@ The result is a basic tooling that allows very nice syntax highlighting, code co
 ![Screenshot](assets/Screenshot01.png)
 
 It's worth mentioning that ghcide is a brilliant starter for the basic code navigation. But I would like to see features from the [Haskelly](https://marketplace.visualstudio.com/items?itemName=UCL.haskelly) extionsion beeing provided too in the future, especially the ones that automatically discover which buttons may be usefull in the current context and displays these buttons in the status bar. This then provides the very basic feeling of a visual development environment: Edit code and the simply click a button to build, test or run!
+
+P.S.: I recently had success to build ghcide and haskell-language-server on Windows 10, so I can use the tooling also in a plain Windows 10 setup without WSL2.
