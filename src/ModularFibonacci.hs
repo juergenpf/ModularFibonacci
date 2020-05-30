@@ -28,7 +28,7 @@ import Data.Ratio
   A simple definition to generate the infinite list of primes
   Good enough for experimenting with "small" primes
 -}
-primes :: [Integer]
+primes :: (Integral a) => [a]
 primes = sieve (2 : [3, 5..])
   where
     sieve (p:xs) = p : sieve [ x|x <- xs, x `mod` p > 0 ]
@@ -36,7 +36,7 @@ primes = sieve (2 : [3, 5..])
 {-| 
   The classical infinite series of integer Fibonacci numbers 
 -}
-fibonacci :: [Integer]
+fibonacci :: (Integral a) => [a]
 fibonacci = fibs
     where
       fibs = 0 : 1 : zipWith (+) fibs (tail fibs)
@@ -45,7 +45,7 @@ fibonacci = fibs
   The fibonacciModP function calculates the infinite list of fibonacci numbers modulo a Prime p.
   * One argument, which is the (Prime) number p representing the modulus.
 -}
-fibonacciModP :: Integer -> [Integer]
+fibonacciModP :: (Integral a) => a -> [a]
 fibonacciModP p = fibsp
   where
     plus p x y = (x + y) `mod ` p
@@ -55,7 +55,7 @@ fibonacciModP p = fibsp
     The fibonacciModP' function just returns the finite list with the first period of the Fibonacci series modulo a Prime number p.
   * One argument, which is the (Prime) number p representing the modulus.
 -}
-fibonacciModP' :: Integer -> [Integer]
+fibonacciModP' :: (Integral a) => a -> [a]
 fibonacciModP' p = take (period!!0) fibs
   where
     fibs = fibonacciModP p
@@ -65,8 +65,8 @@ fibonacciModP' p = take (period!!0) fibs
   The fibonacciPeriod function calculates the length of a period of fibonacci numbers modulo a prime.
   * One argument, which is the (Prime) number p representing the modulus.
 -}
-fibonacciPeriod :: Integer -> Integer
-fibonacciPeriod p = toInteger (length (fibonacciModP' p))
+fibonacciPeriod :: (Integral a) => a -> a
+fibonacciPeriod p = fromIntegral (length (fibonacciModP' p))
 
 {-|              
   An infinite list of some characteristics for Fibonacci series calculated with modular arithmetic with a prime modulus. 
@@ -80,7 +80,7 @@ fibonacciPeriod p = toInteger (length (fibonacciModP' p))
 
   The fibonacciWeight is the fibonacciPeriod divided by the fibonacciModulus.
 -}
-fibonacciInfo :: [(Integer,Integer,Integer,Integer)]
+fibonacciInfo :: (Integral a) => [(a,a,a,a)]
 fibonacciInfo = [ (p,fPeriod,fibonacciModulus,fibonacciWeight) | p <- primes, 
     let fPeriod = fibonacciPeriod p,
     -- We call this the FibonacciModulus of prime p
