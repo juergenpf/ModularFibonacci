@@ -59,7 +59,7 @@ I decided to go with [Visual Studio Code](https://code.visualstudio.com/) (no su
 ### The Haskell Tooling
 
 1. I'm using the [Haskell Language Server]( https://github.com/haskell/haskell-language-server). I did build that on a linux machine following the build instructions and copied the produced binaries into the /usr/bin directory of my WSL instance.
-2. In Visual Studio Code I use the [ghcide](https://marketplace.visualstudio.com/items?itemName=DigitalAssetHoldingsLLC.ghcide) extension
+2. In Visual Studio Code I use the [Haskell Language Server](https://marketplace.visualstudio.com/items?itemName=alanz.vscode-hie-server) extension
 
 The Haskell Language Server is a merger of the previos separate projects [Haskell IDE Engine](https://github.com/haskell/haskell-ide-engine) and [ghcide](https://github.com/digital-asset/ghcide). The server provides all the binaries required by the Visual Studio Code extension.
 
@@ -67,6 +67,6 @@ The result is a basic tooling that allows very nice syntax highlighting, code co
 
 ![Screenshot](assets/Screenshot01.png)
 
-It's worth mentioning that ghcide is a brilliant starter for the basic code navigation. But I would like to see features from the [Haskelly](https://marketplace.visualstudio.com/items?itemName=UCL.haskelly) extionsion beeing provided too in the future, especially the ones that automatically discover which buttons may be usefull in the current context and displays these buttons in the status bar. This then provides the very basic feeling of a visual development environment: Edit code and the simply click a button to build, test or run!
+It's worth mentioning that [Haskell Language Server](https://marketplace.visualstudio.com/items?itemName=alanz.vscode-hie-server) is a brilliant starter for the basic code navigation. But I would like to see features from the [Haskelly](https://marketplace.visualstudio.com/items?itemName=UCL.haskelly) extionsion beeing provided too in the future, especially the ones that automatically discover which buttons may be usefull in the current context and displays these buttons in the status bar. This then provides the very basic feeling of a visual development environment: Edit code and the simply click a button to build, test or run!
 
 P.S.: I recently had success to build ghcide and haskell-language-server on Windows 10, so I can use the tooling also in a plain Windows 10 setup without WSL2.
