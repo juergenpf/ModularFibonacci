@@ -19,7 +19,8 @@
 # resolver: https://example.com/snapshots/2018-01-01.yaml
 # On Ubuntu-20.04 the current ghc is 8.6.5, so we use the latest resolver for
 # this version
-resolver: lts-14.27
+resolver: ghc-8.10.1
+compiler: ghc-8.10.1
 
 # User packages to be built.
 # Various formats can be used as shown in the example below.
