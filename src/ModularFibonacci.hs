@@ -14,13 +14,13 @@ Portability : POSIX
   this doesn't really matter. But mathematically it is more correct this way. 
 -}
 module ModularFibonacci
-    ( primes,
-    fibonacci,
-    fibonacciModP,
-    fibonacciModP',
-    fibonacciPeriod,
-    fibonacciInfo
-    ) where
+  ( primes,
+  fibonacci,
+  fibonacciModP,
+  fibonacciModP',
+  fibonacciPeriod,
+  fibonacciInfo
+  ) where
 
 import Data.Ratio
 
@@ -38,8 +38,8 @@ primes = sieve (2 : [3, 5..])
 -}
 fibonacci :: (Integral a) => [a]
 fibonacci = fibs
-    where
-      fibs = 0 : 1 : zipWith (+) fibs (tail fibs)
+  where
+    fibs = 0 : 1 : zipWith (+) fibs (tail fibs)
 
 {-| 
   The fibonacciModP function calculates the infinite list of fibonacci numbers modulo a Prime p.
@@ -82,8 +82,8 @@ fibonacciPeriod p = fromIntegral (length (fibonacciModP' p))
 -}
 fibonacciInfo :: (Integral a) => [(a,a,a,a)]
 fibonacciInfo = [ (p,fPeriod,fibonacciModulus,fibonacciWeight) | p <- primes, 
-    let fPeriod = fibonacciPeriod p,
-    -- We call this the FibonacciModulus of prime p
-    let fibonacciModulus = max (gcd (p+1) fPeriod) (gcd (p-1) fPeriod),
-    -- We call this the FibonacciWeight of prime p
-    let fibonacciWeight = fPeriod `div` fibonacciModulus ]
+  let fPeriod = fibonacciPeriod p,
+  -- We call this the FibonacciModulus of prime p
+  let fibonacciModulus = max (gcd (p+1) fPeriod) (gcd (p-1) fPeriod),
+  -- We call this the FibonacciWeight of prime p
+  let fibonacciWeight = fPeriod `div` fibonacciModulus ]
