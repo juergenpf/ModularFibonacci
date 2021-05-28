@@ -54,7 +54,7 @@ So I decided to make use of the best of both worlds, which means
 
 ### The Editor
 
-I decided to go with [Visual Studio Code](https://code.visualstudio.com/) (no surprise as I'm a retired Microsoftie:-)). Please note, that you should not install this editor in the WSL Linux you use, but on the Windows host. The reason is, that for WSL the ditor provides a special remote extension, that allows to run the editor as Windows app but doing the build in the WSL subsystem (see [here](https://code.visualstudio.com/docs/remote/wsl))
+I decided to go with [Visual Studio Code](https://code.visualstudio.com/) (no surprise as I'm a retired Microsoftie:-)). Please note, that you should not install this editor in the WSL Linux you use, but on the Windows host. The reason is, that for WSL the editor provides a special remote extension, that allows to run the editor as Windows app but doing the build in the WSL subsystem (see [here](https://code.visualstudio.com/docs/remote/wsl))
 
 ### The Haskell Tooling
 

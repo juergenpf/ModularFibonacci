@@ -1,10 +1,10 @@
 name:                ModularFibonacci
-version:             1.0.0.0
+version:             1.0.1.0
 github:              "juergenpf/ModularFibonacci"
 license:             BSD3
 author:              "Jürgen Pfeifer"
 maintainer:          "juergen@familiepfeifer.de"
-copyright:           "2020 Jürgen Pfeifer"
+copyright:           "2019-2021 Jürgen Pfeifer"
 
 extra-source-files:
 - README.md

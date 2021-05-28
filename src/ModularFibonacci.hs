@@ -1,7 +1,7 @@
 {-|
 Module      : ModularFibonacci
 Description : Implements some functions for Fibonacci number series with modular arithmetic.
-Copyright   : © Jürgen Pfeifer, 2019-2020
+Copyright   : © Jürgen Pfeifer, 2019-2021
 License     : BSD3
 Maintainer  : juergen@familiepfeifer.de
 Stability   : experimental
@@ -56,10 +56,10 @@ fibonacciModP p = fibsp
   * One argument, which is the (Prime) number p representing the modulus.
 -}
 fibonacciModP' :: (Integral a) => a -> [a]
-fibonacciModP' p = take (period!!0) fibs
+fibonacciModP' p = take (head period) fibs
   where
     fibs = fibonacciModP p
-    period = [ n | n <- [2,3..], fibs!!(n-1)==1, fibs!!(n)==0 ]
+    period = [ n | n <- [2,3..], fibs!!(n-1)==1, fibs !! n==0 ]
 
 {-| 
   The fibonacciPeriod function calculates the length of a period of fibonacci numbers modulo a prime.

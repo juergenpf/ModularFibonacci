@@ -1,19 +1,19 @@
 cabal-version: 1.12
 
--- This file has been generated from package.yaml by hpack version 0.33.0.
+-- This file has been generated from package.yaml by hpack version 0.34.4.
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 1092fb827e1d9b0402398822c9c61a5d6038411fa3d4b2312ff97b0f9240bb7e
+-- hash: 5a8672a2dfda62d2905d3f1c73aa0eaaea0c0caaafb8e020965300e9b7c04205
 
 name:           ModularFibonacci
-version:        1.0.0.0
+version:        1.0.1.0
 description:    Please see the README on GitHub at <https://github.com/githubuser/ModularFibonacci#readme>
 homepage:       https://github.com/juergenpf/ModularFibonacci#readme
 bug-reports:    https://github.com/juergenpf/ModularFibonacci/issues
 author:         Jürgen Pfeifer
 maintainer:     juergen@familiepfeifer.de
-copyright:      2020 Jürgen Pfeifer
+copyright:      2019-2021 Jürgen Pfeifer
 license:        BSD3
 license-file:   LICENSE
 build-type:     Simple

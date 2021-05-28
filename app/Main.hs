@@ -1,5 +1,5 @@
 {-
-    © 2019-2020 by Jürgen Pfeifer (juergen@familiepfeifer.de)
+    © 2019-2021 by Jürgen Pfeifer (juergen@familiepfeifer.de)
 -}
 module Main where
 
@@ -8,7 +8,7 @@ import ModularFibonacci
 experiment = take 200 fibonacciInfo
 
 main :: IO ()
-main = print (experiment)
+main = print experiment
 {-
     The experiment shows, that 5 seems to be very special when it comes to
     Fibonacci. If you calculate the Fibonacci numbers modulo 5, the length
