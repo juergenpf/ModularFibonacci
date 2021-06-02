@@ -1,4 +1,3 @@
 .stack-work/
-stack.yaml
-stack.yaml.locl
+stack.yaml.lock
 *~
