@@ -1,11 +1,11 @@
 #
 # The resolver is hardcoded to make sure the current Haskell Language Server
 # works with the project
-compiler: ghc-8.10.4
+compiler: ghc-8.10.7
 
 # The resolver is hardcoded to make sure the current Haskell Language Server
 # works with the project
-resolver: ghc-8.10.4
+resolver: ghc-8.10.7
 
 # User packages to be built.
 # Various formats can be used as shown in the example below.
