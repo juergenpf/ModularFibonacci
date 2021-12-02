@@ -31,6 +31,7 @@ import Data.Ratio
 primes :: (Integral a) => [a]
 primes = sieve (2 : [3, 5..])
   where
+    sieve [] = []
     sieve (p:xs) = p : sieve [ x|x <- xs, x `mod` p > 0 ]
 
 {-| 
