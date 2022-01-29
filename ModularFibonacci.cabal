@@ -13,7 +13,7 @@ homepage:       https://github.com/juergenpf/ModularFibonacci#readme
 bug-reports:    https://github.com/juergenpf/ModularFibonacci/issues
 author:         Jürgen Pfeifer
 maintainer:     juergen@familiepfeifer.de
-copyright:      2019-2021 Jürgen Pfeifer
+copyright:      2019-2022 Jürgen Pfeifer
 license:        BSD3
 license-file:   LICENSE
 build-type:     Simple
