@@ -1,4 +1,5 @@
 .stack-work/
 test/
 stack.yaml.lock
+ModularFibonacci.cabal
 *~
