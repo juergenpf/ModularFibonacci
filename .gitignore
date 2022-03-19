@@ -1,5 +1,6 @@
 .stack-work/
 test/
+dist-newstyle/
 stack.yaml.lock
 ModularFibonacci.cabal
 *~
