@@ -1,5 +1,5 @@
 {-
-    © 2019-2022 by Jürgen Pfeifer (juergen@familiepfeifer.de)
+    © 2019-2023 by Jürgen Pfeifer (juergen@familiepfeifer.de)
 -}
 module Main where
 
