@@ -41,7 +41,7 @@ primes = sieve (2 : [3, 5..])
 fibonacci :: (Integral a) => [a]
 fibonacci = fibs
   where
-    fibs = 0 : 1 : zipWith (+) fibs (tail fibs)
+    fibs = 0 : 1 : zipWith (+) fibs (drop 1 fibs)
 
 {-| 
   The fibonacciModP function calculates the infinite list of fibonacci 
@@ -52,7 +52,7 @@ fibonacciModP :: (Integral a) => a -> [a]
 fibonacciModP p = fibsp
   where
     plus p x y = (x + y) `mod` p
-    fibsp = 0 : 1 : zipWith (plus p) fibsp (tail fibsp)
+    fibsp = 0 : 1 : zipWith (plus p) fibsp (drop 1 fibsp)
 
 {-| 
     The fibonacciModP' function just returns the finite list with the first 
