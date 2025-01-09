@@ -5,7 +5,7 @@ compiler: ghc-9.4.8
 
 # The resolver is hardcoded to make sure the current Haskell Language Server
 # works with the project
-resolver: ghc-9.4.8
+resolver:  lts-19.0
 
 # User packages to be built.
 # Various formats can be used as shown in the example below.
