@@ -1,7 +1,7 @@
 #
 # The resolver is hardcoded to make sure the current Haskell Language Server
 # works with the project
-compiler: ghc-9.4.8
+compiler: ghc-9.10.1
 
 # The resolver is hardcoded to make sure the current Haskell Language Server
 # works with the project
