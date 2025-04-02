@@ -24,6 +24,7 @@ module ModularFibonacci
   ) where
 
 import Data.Ratio
+import Data.Maybe (listToMaybe)
 
 {-| 
   A simple definition to generate the infinite list of primes
@@ -60,7 +61,9 @@ fibonacciModP p = fibsp
   * One argument, which is the (Prime) number p representing the modulus.
 -}
 fibonacciModP' :: (Integral a) => a -> [a]
-fibonacciModP' p = take (head period) fibs
+fibonacciModP' p = case listToMaybe period of
+  Just n  -> take n fibs
+  Nothing -> []
   where
     fibs = fibonacciModP p
     period = [ n | n <- [2,3..], fibs!!(n-1)==1, fibs !! n==0 ]
