@@ -1,7 +1,7 @@
 {-|
 Module      : ModularFibonacci
 Description : Functions for Fibonacci number series with modular arithmetic.
-Copyright   : © Jürgen Pfeifer, 2019-2024
+Copyright   : © Jürgen Pfeifer, 2019-2025
 License     : BSD3
 Maintainer  : juergen@familiepfeifer.de
 Stability   : experimental

@@ -4,7 +4,7 @@ github:              "juergenpf/ModularFibonacci"
 license:             BSD3
 author:              "Jürgen Pfeifer"
 maintainer:          "juergen@familiepfeifer.de"
-copyright:           "2019-2024 Jürgen Pfeifer"
+copyright:           "2019-2025 Jürgen Pfeifer"
 
 extra-source-files:
 - README.md
