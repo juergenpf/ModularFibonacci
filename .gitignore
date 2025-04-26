@@ -4,3 +4,4 @@ dist-newstyle/
 stack.yaml.lock
 ModularFibonacci.cabal
 *~
+.vscode/settings.json
